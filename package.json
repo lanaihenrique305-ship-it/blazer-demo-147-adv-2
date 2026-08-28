@@ -1,0 +1,25 @@
+{
+  "name": "blazer-demo-147-adv-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": { 
+    "test"  : "npx playwright test",
+    "test:bdd": "cucumber-js features/**/*.feature --require steps/**/*.steps.js --require support/**/*.js --require support/**/*.js --format json:reports/cucumber-report.json",
+     "report" : " node gerente-report.js"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.3.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright-bdd": "^9.2.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.2.1"
+  }
+}
